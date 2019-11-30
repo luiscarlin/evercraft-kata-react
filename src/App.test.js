@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { shallow } from "enzyme";
-import { findNodeModule } from "jest-resolve";
 
 describe("App", () => {
   it('has "Name" label', () => {
