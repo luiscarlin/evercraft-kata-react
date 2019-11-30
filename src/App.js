@@ -7,14 +7,20 @@ function App() {
   return (
     <div className="App">
       <div className="name">
-        <label>Enter Name</label>
+        <label>Name</label>
         <input
           onChange={event => setName(event.target.value)}
           value={name}
+          placeholder="enter name"
         ></input>
       </div>
       <div className="alignment">
         <label>Alignment</label>
+        <select>
+          <option value="good">Good</option>
+          <option value="neutral">Neutral</option>
+          <option value="evil">Evil</option>
+        </select>
       </div>
     </div>
   );
