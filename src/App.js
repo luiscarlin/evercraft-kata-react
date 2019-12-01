@@ -21,6 +21,15 @@ function App() {
           <option value="evil">Evil</option>
         </select>
       </div>
+      <div className="armor-class">
+        <label>Armor Class</label>
+        <span>10</span>
+      </div>
+      <div className="hit-points">
+        <label>Hit Points</label>
+        <span>5</span>
+      </div>
+      <button>Roll</button>
     </div>
   );
 }

@@ -34,4 +34,28 @@ describe("App", () => {
     expect(options).toHaveLength(3);
     expect(options).toEqual(["Good", "Neutral", "Evil"]);
   });
+
+  it("has a armor class field that default to 10", () => {
+    const subject = shallow(<App />);
+
+    const armorClass = subject.find(".armor-class");
+
+    expect(armorClass.find("label").text()).toEqual("Armor Class");
+    expect(armorClass.find("span").text()).toEqual("10");
+  });
+
+  it("has hit points field that default to 5", () => {
+    const subject = shallow(<App />);
+
+    const armorClass = subject.find(".hit-points");
+
+    expect(armorClass.find("label").text()).toEqual("Hit Points");
+    expect(armorClass.find("span").text()).toEqual("5");
+  });
+
+  it("has a roll button", () => {
+    const subject = shallow(<App />);
+
+    expect(subject.find("button").text()).toEqual("Roll");
+  });
 });
